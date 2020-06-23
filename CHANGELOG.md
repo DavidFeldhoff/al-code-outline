@@ -1,5 +1,39 @@
 # Change Log
 
+## 2.0.1
+ - Default field tooltip demplate updated
+ - "Add ToolTips to the Active Editor" screenshot added to the documentation 
+
+## 2.0.0
+ - New version of the language server with .net core and Mac support
+ - "Add ToolTips to the Active Editor" and "Add ToolTips to the Active Project" commands by StefanoPrimo
+
+  Thank you StefanoPrimo for your contribution
+
+## 1.0.49
+ - Github issues #118 and #131 - Symbols not visible when using Microsoft AL Extension from Nav 2018
+
+  Thank you skkulla and B0uMe for reporting your problems
+
+## 1.0.48
+ - Github issue #128 - "Add multiple fields" inserts fields above parent element properties
+ - Github issue #129 - Issues with "Add Parenthesis" code fix on document save
+   - Code fix is no longer created if "alOutline.fixCodeCopMissingParenthesesOnSave" setting is set to false as Microsoft AL Extension can now create the same fix
+   - If "alOutline.fixCodeCopMissingParenthesesOnSave" is set to true, code fix will still be created and run on document save as Microsoft version of the fix cannot do it.
+   - Fix is created for document save action only, so there is just one fix for whole file instead of separate fixes for each missing parenthesis.  
+ - Github issue #121 - New AL File Wizard: sort properties
+ - Page wizard was ignoring entered "Application Area" for fields
+ - Github issue #123 - Problems with azALDevTools.showDocumentSymbols command for files other than al
+ - Github issue #126 - AL New Table Wizard - Choose Enum Type
+
+ Thank you NKarolak for reporting issues #128 and #121, fvet for the issue #129, HuFBH for the issue #123 and rvanbekkum for the issue #126
+
+## 1.0.47
+ - Github issue #122 - codeActionsOnSave ignored 
+ - "Sort Procedures" code action fixes by David Feldhoff
+
+ Thank you NKarolak for reporting the issue #122 and David Feldhoff for fixing "Sort Procedures" code action
+
 ## 1.0.46
  - Github issue #117 - "New Table Wizard: missing length"
  - Github issue #119 - Adopt VS Code's 'asWebviewUri' API
